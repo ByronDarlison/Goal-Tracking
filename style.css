@@ -1,0 +1,219 @@
+
+
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  /* at the top of our CSS, we tell all elements (hence the wildcard * selector) to take padding and border away from the set width and height */
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/*eliminates issue of parent element not sizing correctly for child elements. Add to the class of .wrapper to apply it.*/
+
+body {
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+	width: 800px;
+	background: white;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:14px;
+	text-align: center;
+	padding:1px;
+	margin: 5px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.header {
+	background:white;
+	width: 100%;
+	height: 50px;
+}
+
+h1 {
+	float:left;
+	margin: 0 auto;
+	width: 90%;
+	letter-spacing: -2px;
+}
+
+img.login {
+	float: right;
+	margin: 0 auto;
+}
+
+.selector {
+	background-color:#b4ffc6;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+p.multiSelect {
+	line-height: .5;
+}
+
+.who {
+	float:left;
+	width: 20%;
+}
+
+.tags {	
+	float:left;
+	width: 20%;
+}
+
+.status {
+	float:left;
+	width: 20%;
+}
+
+.situationSelect {
+	float:left;
+	width: 20%;
+}
+
+.addGoalButton {
+	float:left;
+	width: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.goal {
+	clear: both;
+	margin-top: 10px;
+	background-color: lightgray;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	padding-left: 10px;
+}
+
+h2.goalTitle {
+	float: left;
+	color: darkgray;
+	margin-left: -9px;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+.goalCreated {
+	float: right;
+	vertical-align: super;
+	font-size: .65rem;
+}
+
+img.goalOwner {
+	float: right;
+	margin-top: 5px;
+}
+
+.goalDescription {
+	clear: top;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 0px;
+}
+
+.goalDue {
+	clear: top;
+	float: right;
+	color: darkgray;
+	text-decoration: line-through;
+}
+
+.goalDueRevised {
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+/*	margin-top: 5px;*/
+}
+
+.dueRevisedCount {
+	float: right;
+	vertical-align: super;
+	font-size: .60rem;
+}
+
+.situation {
+	clear: both;
+}
+
+img.situationOwner {
+	float: right;
+	margin-top: 5px;
+}
+
+h2.situationTitle {
+	float: left;
+	color: darkgray;
+	margin-left: 1px;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+.situationCreated {
+	float: right;
+	vertical-align: super;
+	font-size: .65rem;
+}
+
+.situationDescription {
+	clear: top;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.goalDue {
+	clear: top;
+	float: right;
+	color: darkgray;
+	text-decoration: line-through;
+}
+
+.goalDueRevised {
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+
+.addSituationButton {
+	float:left;
+	width: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;

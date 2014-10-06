@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Goal Tracking</title> <!-- A prototype for a goal tracking application that I would like to make based upon Google's OKR (objectives & key results) process -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<div class="wrapper clearfix">
+		
+		<div class="header">
+
+			<h1>Goal Tracking</h1>
+
+			<img src="images/user.png" alt="" class="login User"> <!-- image of user who is logged in -->
+
+			</div> <!-- end header -->
+	
+		<div class="selector clearfix">
+
+			<form name="Who" class="who multiSelect">
+				<p class="multiSelect">Who</p>
+				<input type="checkbox" checked>All<br>
+				<input type="checkbox">Jim<br>
+				<input type="checkbox">Bob<br>
+				<input type="checkbox">Jane<br>
+				<input type="checkbox">Mary<br>	
+				<input type="checkbox">...<br>
+				</form>
+
+			<form name="Tags" class="tags multiSelect">
+				<p class="multiSelect">Tags</p>
+				<input type="checkbox">Tag1<br>
+				<input type="checkbox">Tag2<br>
+				<input type="checkbox">Tag3<br>
+				<input type="checkbox">Tag4<br>
+				<input type="checkbox">Tag5<br>	
+				<input type="checkbox">...<br>
+				</form>
+
+			<form name="Status" class="status multiSelect">
+				<p class="multiSelect">Status</p>
+				<input type="checkbox">All<br>
+				<input type="checkbox" checked>Open<br>
+				<input type="checkbox">Achieved<br>
+				<input type="checkbox">Abandoned<br>
+				</form>
+
+			<form name="situationSelect" class="situationSelect multiSelect">
+				<p class="multiSelect">Situation</p>
+				<input type="checkbox" checked>All<br>
+				<input type="checkbox">Okay<br>
+				<input type="checkbox">MIA<br>
+				<input type="checkbox">Late<br>
+				</form>
+
+			</div> <!-- end selector -->
+
+		<a href="" class="addGoalButton myButton">Add Goal</a> <!-- need to slide goals down and add new blank goal dialogue -->
+
+		<div class="goal clearfix">
+			<img src="images/user.png" alt="" class="goalOwner user">
+			<p class="goalCreated">01-Nov-2014</p>
+			<h2 class="goalTitle">Goal</h2>
+			<p class="goalDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum velit animi officia totam commodi cupiditate placeat, quis perspiciatis nam, at harum, nostrum nisi! Non tempore dicta commodi iusto beatae provident.</p>
+			<p class="goalDueRevised">01-Oct-2015</p>
+			<p class="dueRevisedCount">10</p>
+			<p class="goalDue"> 25-Dec-2014</p>
+			
+			<div class="situation">
+
+				<img src="images/user.png" alt="" class="situationOwner user">
+				<p class="situationCreated">10-Nov-2014<p>
+				<h2 class="situationTitle">Situation</h2>
+				<p class="situationDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum velit animi officia totam commodi cupiditate placeat, quis perspiciatis nam, at harum, nostrum nisi! Non tempore dicta commodi iusto beatae provident.</p>
+				<p class="dueRevised">01-Oct-2015</p>
+				
+				<p class="moreSituations">More...</p>
+				<a href="" class="addSituationButton myButton">Add Situation</a>
+			
+			</div> <!-- end situation -->
+
+			<!-- <p class="discuss"><span class="discussCreated">01-Nov-2014</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum velit animi officia totam commodi cupiditate placeat, quis perspiciatis nam, at harum, nostrum nisi! Non tempore dicta commodi iusto beatae provident. <img src="images/user.png" alt="" class="discussOwner user"> </span> <button type="addSituationButton">Add Situation</button></p>
+
+			<p class="moreDiscussion">More...</p> -->
+	
+		</div> <!-- end goal -->
+
+	</div> <!-- end wrapper -->
+
+
+</body>
+</html>
+
+<!-- Development Notes / What's Next:
+- Edit model
+- Define Share Model / Sign-Up Model
+- Organization Level Goal
+- Goal Related To relationship (heirarchy)
+- Provide real-time editing with notification of co-viewer/editor
+- Use Web Component achitecture
+- Define data structure and data store
+- Roll-up based on equal weighting and relation heirarchy to determine overall results for a date range by:
+ - Person or Persons
+ - Tags
+ - Organization
+- Price by Organization, Free by Individual - Open Source
+
+ -->
