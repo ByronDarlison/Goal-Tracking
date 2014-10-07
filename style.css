@@ -134,8 +134,23 @@ h2.goalTitle {
 
 .goalCreated {
 	float: right;
-	vertical-align: super;
-	font-size: .65rem;
+	font-size: .60rem;
+	color: darkgray;
+	text-decoration: line-through;
+}
+
+.goalCreatedRevised {
+	float: right;
+	font-size: .60rem;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.goalCreatedRevisedCount {
+	float: right;
+	margin-top: 2px;
+/*	vertical-align: super;*/
+	font-size: .60rem;
 }
 
 img.goalOwner {
@@ -161,10 +176,9 @@ img.goalOwner {
 	float: right;
 	margin-left: 5px;
 	margin-right: 5px;
-/*	margin-top: 5px;*/
 }
 
-.dueRevisedCount {
+.goalDueRevisedCount {
 	float: right;
 	vertical-align: super;
 	font-size: .60rem;
